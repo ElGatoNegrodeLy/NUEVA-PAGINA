@@ -8,7 +8,7 @@
     <style>
         body {
             color: white;
-            background-color: rgb(8, 8, 8);
+            background-color: rgb(0, 10, 16);
             background-image: url('../../Downloads/WhatsApp%20Image%202024-08-18%20at%206.23.50%20PM.jpeg');
             background-size: cover;
             background-position: center;
@@ -17,77 +17,76 @@
         }
         .navbar {
             position: absolute;
-            top: 48px;
-            left: 16px;
-            width: 174px;
-            height: auto;
-            padding: 0;
+            top: 20px;
+            left: 15px;
+            width: 200px;
             list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar li {
+            margin: 5px 0;
         }
         .navbar a {
             display: block;
             color: white;
             text-decoration: none;
-            margin: 5px 0;
-            padding: 5px;
+            padding: 8px;
+            border-radius: 4px;
         }
         .navbar a:hover {
-            background-color: rgba(0, 0, 153, 0.5);
+            background-color: #6600cc;
         }
-        h1 {
+        .header {
             text-align: right;
             margin: 20px;
-            color: white;
         }
-        h1 img {
-            width: 76px;
-            height: 60px;
+        .header img {
+            width: 100px;
+            height: auto;
             vertical-align: middle;
-            margin-left: 10px;
         }
-        .contact-info {
+        .content {
+            text-align: center;
             margin: 20px;
         }
-        .contact-info p {
+        .content h1 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .content h2 {
             margin: 10px 0;
         }
-        .contact-info span {
-            display: block;
-        }
-        textarea {
+        table {
             width: 100%;
-            max-width: 400px;
-            margin: 10px 0;
+            margin: 20px auto;
+            border-collapse: collapse;
         }
-        button {
-            background-color: #000099;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #3333cc;
+        table img {
+            width: 100%;
+            height: auto;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: rgb(8, 8, 8);
-            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
         }
         footer a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
         }
-        footer img {
+        footer a img {
             width: 40px;
             height: 40px;
             vertical-align: middle;
         }
+        footer p {
+            margin: 10px 0;
+        }
     </style>
 </head>
-<body>
+<body style="color: white; background-color: rgb(51, 255, 51);" alink="#000099" link="#000099" vlink="#990099">
     <!-- Menú de navegación -->
     <ul class="navbar">
         <li style="font-family: Georgia;"><a href="index.html">Página principal</a></li>
@@ -97,43 +96,65 @@
         <li style="font-family: Georgia;"><a href="productos.html">Productos</a></li>
         <li style="font-family: Georgia;"><a href="quienessomos.html">Quiénes somos</a></li>
         <li style="font-family: Georgia;"><a href="servicios.html">Servicios</a></li>
-        <li><a href="ubicacion.html"><span style="font-family: Georgia;">Ubicación</span></a></li>
+        <li><a href="ubicacion.html"><span style="font-family: Georgia;">Ubica</span>ción</a></li>
     </ul>
 
-    <h1><span>EL LIBRERO DEL GATO NEGRO</span> <img src="../GALILEO/Nueva%20carpeta/WhatsApp%20Image%202024-08-17%20at%209.02.59%20PM.jpeg" alt="logo"> </h1>
-
-    <div class="contact-info">
-        <div style="text-align: left;">
-            <strong>Dirección:</strong> 10 av. 20-90 zona 21, Ciudad de Guatemala
-        </div>
-        <div style="text-align: left;">
-            <strong>Teléfono:</strong> 524-21456775
-        </div>
-        <div style="text-align: left;">
-            <strong>Correo:</strong> <span style="color: rgb(0, 0, 153);">ellibrerodelgatonegro.com</span>
-        </div>
+    <!-- Cabecera -->
+    <div class="header">
+        <h1 style="text-align: center;">
+            <big>EL LIBRERO DEL<img style="width: 160px; height: 160px;" src="../GALILEO/Nueva%20carpeta/WhatsApp%20Image%202024-08-17%20at%209.02.59%20PM.jpeg" alt="Logo del Librero del Gato Negro"> GATO NEGRO&nbsp;</big>
+        </h1>
     </div>
 
-    <div class="contact-info">
-        <p style="text-align: center;"><strong>Suscríbete:</strong></p>
-        <div style="text-align: center;">
-            <textarea cols="50" rows="1" name="SUSCRIBBETE"></textarea>
-            <button type="button" name="Enviar">ENVIAR</button>
-        </div>
+    <div class="content">
+        <p style="text-align: left;">
+            <strong><big style="font-family: Georgia;"><big>Tenemos una gran variedad de libros</big></big></strong>
+        </p>
+        <table>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">
+                        <img style="width: 195px; height: 295px;" src="../GALILEO/Nueva%20carpeta/harry.jpg" alt="Portada de Harry Potter">
+                    </td>
+                    <td style="text-align: center;">
+                        <img style="width: 179px; height: 289px;" src="../GALILEO/Nueva%20carpeta/images%20%282%29.jpg" alt="Portada de libro 2">
+                    </td>
+                    <td style="vertical-align: top; text-align: center;"><br></td>
+                    <td style="text-align: center;">
+                        <img style="width: 219px; height: 301px;" src="../GALILEO/Nueva%20carpeta/ward2.jpg" alt="Portada de Ward 2">
+                    </td>
+                    <td style="vertical-align: top; text-align: center;"><br></td>
+                    <td style="text-align: center;">
+                        <img style="width: 188px; height: 281px;" src="../GALILEO/Nueva%20carpeta/libro-harry-potter-y-la-camara-secreta-ed-minalima.jpg" alt="Portada de Harry Potter y la Cámara Secreta">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <img src="../GALILEO/Nueva%20carpeta/nalini%20sin2.jpg" alt="Portada de Nalini Sin 2">
+                    </td>
+                    <td style="text-align: center;">
+                        <img style="width: 215px; height: 363px;" src="../GALILEO/Nueva%20carpeta/ward%201.jpg" alt="Portada de Ward 1">
+                    </td>
+                    <td style="vertical-align: top;"><br></td>
+                    <td style="text-align: center;">
+                        <img style="width: 229px; height: 350px;" src="../GALILEO/Nueva%20carpeta/harry-potter-y-el-prisionero-de-azkaban-edicion-minalima-harry-potter.jpg" alt="Portada de Harry Potter y el Prisionero de Azkaban">
+                    </td>
+                    <td style="vertical-align: top;"><br></td>
+                    <td style="text-align: center;">
+                        <img style="width: 206px; height: 362px;" src="../GALILEO/Nueva%20carpeta/nalii%201.jpg" alt="Portada de Nalii 1">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
+    <!-- Footer -->
     <footer>
-        <a href="https://www.instagram.com/elgatonegrodely/" target="_blank">
-            <img src="../GALILEO/Nueva%20carpeta/0cc55f8c-7e0a-4742-bbf9-14b5f13b31b9.jpg" alt="Instagram">
-        </a>
-        <a href="https://www.youtube.com/channel/UCvSBAavzzo2u-p51c89NCUw" target="_blank">
-            <img src="../GALILEO/Nueva%20carpeta/png-clipart-youtube-computer-icons-youtube-logo-black.png" alt="YouTube">
-        </a>
-        <a href="https://sites.google.com/d/1zcR-UR7PLL-YT4upChUT3bocrfnU95k-/p/1jlNGrBJ7alFU2p4Q-_SkZpwwgHTL_-gO/edit" target="_blank">
-            <img src="../GALILEO/Nueva%20carpeta/Captura%20de%20pantalla%202024-08-20%20004109.png" alt="Website">
-        </a>
-        <p>ellibrerodelgatonegro.com</p>
-        <p>Guatemala © 2024 El Librero del Gato Negro. Todos los derechos reservados</p>
-    </footer>
-</body>
-</html>
+        <p style="text-align: center;">
+            <a href="https://www.instagram.com/elgatonegrodely/" target="_blank">
+                <img src="../GALILEO/Nueva%20carpeta/0cc55f8c-7e0a-4742-bbf9-14b5f13b31b9.jpg" alt="Instagram" style="width: 40px; height: 40px;">
+            </a>
+            <a href="https://www.youtube.com/channel/UCvSBAavzzo2u-p51c89NCUw" target="_blank">
+                <img src="../GALILEO/Nueva%20carpeta/png-clipart-youtube-computer-icons-youtube-logo-black.png" alt="YouTube" style="width: 43px; height: 43px;">
+            </a>
+            <a href="https://sites.google.com/d/1zcR-UR7PLL-YT4upChUT3bocrfnU95k-/p/1jlNGrBJ7alFU2p4Q-_SkZpwwgHTL
