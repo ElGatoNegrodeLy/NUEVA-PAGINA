@@ -2,170 +2,311 @@
 <html lang="es"><head>
 
 
-  
+
   <meta charset="UTF-8">
-
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mi primera p�gina con estilo</title>
-  
-
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mi página con carrito de compras</title>
   
   <link rel="stylesheet" href="miestilo.css">
 
-  
   <style>
-        body {
-            background-image: url('../../Downloads/WhatsApp%20Image%202024-08-18%20at%206.23.50%20PM.jpeg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .navbar {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            position: absolute;
-            top: 20px;
-            left: 15px;
-            width: 200px;
-        }
-        .navbar a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 8px;
-            margin-bottom: 5px;
-            border-radius: 4px;
-        }
-        .navbar a:hover {
-            background-color: #6600cc;
-        }
-        .header {
-            text-align: right;
-            margin: 20px;
-        }
-        .header img {
-            width: 65px;
-            height: 65px;
-            vertical-align: middle;
-        }
-        .section-title {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        table {
-            width: 90%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            text-align: left;
-        }
-        table img {
-            width: 100%;
-            height: auto;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        footer a img {
-            width: 40px;
-            height: 40px;
-            vertical-align: middle;
-            margin: 0 10px;
-        }
-    </style></head><body>
-<!-- Men� de navegaci�n del sitio -->
-<ul style="left: 16px; width: 190px;" class="navbar">
+    body {
+      background-image: url('../../Downloads/WhatsApp%20Image%202024-08-18%20at%206.23.50%20PM.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 20px;
+      left: 15px;
+      width: 200px;
+    }
+    .navbar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 8px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+    .navbar a:hover {
+      background-color: #6600cc;
+    }
+    .header {
+      text-align: right;
+      margin: 20px;
+    }
+    .header img {
+      width: 65px;
+      height: 65px;
+      vertical-align: middle;
+    }
+    .section-title {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    table img {
+      width: 100%;
+      height: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    footer a img {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+    
+    /* Estilos del carrito */
+    .cart {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #fff;
+      color: #000;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      max-width: 250px; /* Reduce el ancho máximo */
+      font-size: 0.9em; /* Reduce el tamaño del texto */
+      z-index: 1000; /* Asegúrate de que el carrito esté por encima de otros elementos */
+    }
+    .cart h2 {
+      margin: 0;
+      font-size: 1.1em; /* Reduce el tamaño del título */
+    }
+    .cart table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8em; /* Reduce el tamaño del texto en la tabla */
+    }
+    .cart table, .cart th, .cart td {
+      border: 1px solid #ddd;
+    }
+    .cart th, .cart td {
+      padding: 5px; /* Reduce el padding en las celdas */
+      text-align: center;
+    }
+    .cart th {
+      background: #f4f4f4;
+    }
+    .cart button {
+      padding: 8px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em; /* Reduce el tamaño del botón */
+    }
+    .cart button:hover {
+      background: #555;
+    }
+  </style></head><body style="color: white; background-color: rgb(7, 7, 7); background-image: url(imagen2.jfif);" alink="#00000a" link="#000000" vlink="Black">
+  <!-- Menú de navegación del sitio -->
+  <ul class="navbar">
+    <li><p><a href="index.html">Página principal</a></p></li>
+    <li><a href="contactos.html">Contacto</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="preguntas.html">Preguntas</a></li>
+    <li><a href="productos.html">Producto</a></li>
+    <li><a href="quienessomos.html">Quienes somos</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="ubicacion.html">Ubicación</a></li>
+  </ul>
 
-  <li><a href="index.html">Pagina principal</a></li>
-  <li><a href="contactos.html">Contacto</a></li>
-  <li><a href="noticias.html">Noticias</a></li>
-  <li><a href="preguntas.html">Preguntas</a></li>
-  <li><a href="productos.html">Productos</a></li>
-  <li><a href="quienessomos.html">Quienes somos</a></li>
-  <li><a href="servicios.html">Servicios</a></li>
-  <li><a href="ubicacion.html">Ubicacion</a></li>
-</ul>
+  <!-- Encabezado -->
+  <div style="font-family: Jokerman; text-align: center;" class="header"> 
+    <big><big><big><span class="section-title">EL LIBRERO DE <span style="color: white;"></span></span><img style="width: 143px; height: 143px;" alt="" src="gato.jpeg"><span class="section-title"><span style="color: white;">EL GATO NEGRO</span></span></big></big></big>&nbsp; 
+  </div>
 
-<!-- Encabezado -->
-<div class="header"> <big><big><span style="font-family: Jokerman;" class="section-title">EL LIBRERO DE <span style="color: white;">EL GATO NEGRO</span></span><span style="font-family: Jokerman;"> </span></big></big><img src="../GALILEO/Nueva%20carpeta/WhatsApp%20Image%202024-08-17%20at%209.02.59%20PM.jpeg" alt="Logo del Librero del Gato Negro"> </div>
+  <!-- Carrito de Compras -->
+  <div class="cart">
+    <h2>Carrito</h2>
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Los productos añadidos aparecerán aquí -->
+      </tbody>
+    </table>
+    <div id="cart-total">Total: Q0.00</div>
+    <button id="checkout-btn">Proceder al Pago</button>
+  </div>
 
-<!-- Cat�logo -->
-<p class="section-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp; &nbsp; &nbsp; &nbsp;
-Nuestro Catalogo...</p>
-<table style="text-align: left; width: 100px;" border="1" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 224px; height: 318px;" src="../GALILEO/Nueva%20carpeta/ward%201.jpg" alt="Portada de libro Infantil 2"></td>
-      <td style="vertical-align: top;"><img style="width: 206px; height: 319px;" src="../GALILEO/Nueva%20carpeta/nalii%201.jpg" alt="Portada de libro Infantil 1"></td>
-    </tr>
-  </tbody>
-</table>
-<p class="section-title"><br>
-</p>
+  <!-- Catálogo -->
+  <p class="section-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-family: Georgia;">Nuestro Catálogo...</span></p>
 
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big><big> Infantil</big></big></strong></p>
+  <table border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="vertical-align: top; background-color: rgb(1, 1, 1);">
+          <a href="https://youtu.be/5wtfFfBb224?si=VNeHnxjtvkW5y5k4">
+            <img style="border: 0px solid ; width: 739px; height: 348px;" alt="" src="video.png">
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-<table>
+  <p class="section-title"><big><big>&nbsp;&nbsp;&nbsp; </big></big>Infantil</p>
 
-  <tbody>
-    <tr>
-      <td style="text-align: center;"><br>
-</td>
-      <td style="text-align: center;"><br>
-</td>
-      <td style="text-align: center;"><img style="width: 173px; height: 279px;" src="../GALILEO/Nueva%20carpeta/descarga%20%284%29.jpg" alt="Portada de libro Infantil 3"></td>
-      <td style="text-align: center;"><img style="width: 215px; height: 325px;" src="../GALILEO/Nueva%20carpeta/descarga%20%286%29.jpg" alt="Portada de libro Infantil 4"></td>
-      <td style="text-align: center;"><img style="width: 218px; height: 331px;" src="../GALILEO/Nueva%20carpeta/images%20%287%29.jpg" alt="Portada de libro Infantil 5"></td>
-      <td style="text-align: center;"><img style="width: 218px; height: 337px;" src="../GALILEO/Nueva%20carpeta/infantil%201.jpg" alt="Portada de cl�sico 4"></td>
-    </tr>
-  </tbody>
-</table>
+  <table border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="vertical-align: top;">
+          <img style="width: 225px; height: 289px;" alt="" src="dro.jpg">
+          <button onclick="addToCart('Dro', 160)">Q.160.00</button>
+        </td>
+        <td style="vertical-align: top;">
+          <img style="width: 177px; height: 289px;" alt="" src="e.jpg">
+          <button onclick="addToCart('E', 59)">Q.59.00</button>
+        </td>
+        <td style="vertical-align: top;">
+          <img style="width: 194px; height: 291px;" alt="" src="cinder.jpg">
+          <button onclick="addToCart('Cinder', 190)">Q.190.00</button>
+        </td>
+        <td style="vertical-align: top;">
+          <img style="width: 195px; height: 291px;" alt="" src="infantil1.jpg">
+          <button onclick="addToCart('Infantil1', 100)">Q.100.00</button>
+        </td>
+        <td style="vertical-align: top;">
+          <img style="width: 198px; height: 293px;" alt="" src="infantil2.jpg">
+          <button onclick="addToCart('Infantil2', 130)">Q.130.00</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-<p><big><big><strong>Clasicos</strong></big></big></p>
+  <p class="section-title">&nbsp;&nbsp;&nbsp; Clasicos</p>
 
-<table style="width: 1071px; height: 389px;">
+  <table border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="vertical-align: top;">
+          <img style="width: 196px; height: 277px;" alt="" src="dra.jpg">
+          <button onclick="addToCart('Dra', 80)">Q.80.00</button>
+        </td>
+        <td style="vertical-align: top;">
+          <img style="width: 190px; height: 279px;" alt="" src="inf.jpg">
+          <button onclick="addToCart('Inf', 200)">Q.200.00</button>
+        </td>
+        <td style="vertical-align: top;">
+          <img style="width: 183px; height: 275px;" alt="" src="lib.jpg">
+          <button onclick="addToCart('Lib', 202)">Q.202.00</button>
+        </td>
+        <td style="vertical-align: top;">
+          <img style="width: 187px; height: 272px;" alt="" src="magen1.jpg">
+          <button onclick="addToCart('Mej', 180)">Q.180.00</button>
+        </td>
+        <td style="vertical-align: top;">
+      <div style="text-align: center;">
+          <img style="width: 194px; height: 276px;" alt="" src="mage.jpg">
+          <button onclick="addToCart('Gan', 150)">Q.150.00</button></div>
 
-  <tbody>
-    <tr>
-      <td style="text-align: center;"><img style="width: 230px; height: 353px;" src="../GALILEO/Nueva%20carpeta/descarga%20%284%29.jpg" alt="Portada de cl�sico 1"></td>
-      <td style="text-align: center;"><img style="width: 238px; height: 355px;" src="../GALILEO/Nueva%20carpeta/descarga%20%285%29.jpg" alt="Portada de cl�sico 2"></td>
-      <td style="text-align: center;"><img src="../GALILEO/Nueva%20carpeta/e.jpg" alt="Portada de cl�sico 3"></td>
-      <td style="text-align: center;"><img style="width: 228px; height: 326px;" src="../GALILEO/Nueva%20carpeta/images%20%284%29.jpg" alt="Portada de libro Infantil 6"></td>
-    </tr>
-  </tbody>
-</table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-<p><big><big><strong>Fantasia</strong></big></big></p>
-
-<table style="width: 1071px; height: 371px;">
-
-  <tbody>
-    <tr>
-      <td style="text-align: center;"><img style="width: 216px; height: 351px;" src="../GALILEO/Nueva%20carpeta/harry.jpg" alt="Portada de fantas�a 1"></td>
-      <td style="text-align: center;"><img style="width: 212px; height: 343px;" src="../GALILEO/Nueva%20carpeta/nalini%20sin2.jpg" alt="Portada de fantas�a 2"></td>
-      <td style="text-align: center;"><img style="width: 240px; height: 357px;" src="../GALILEO/Nueva%20carpeta/images%20%282%29.jpg" alt="Portada de fantas�a 3"></td>
-      <td style="text-align: center;"><img style="width: 216px; height: 344px;" src="../GALILEO/Nueva%20carpeta/images%20%284%29.jpg" alt="Portada de fantas�a 4"></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- Footer --> <footer> </footer>
-<p style="text-align: center;">Visitanos en nuestras paginas y
-encuentra promociones exclusivas</p>
-
-<div style="text-align: center;"> <a href="https://www.instagram.com/elgatonegrodely/" target="_blank"> <img style="width: 51px; height: 51px;" src="../GALILEO/Nueva%20carpeta/0cc55f8c-7e0a-4742-bbf9-14b5f13b31b9.jpg" alt="Instagram"> </a> <a href="https://www.youtube.com/channel/UCvSBAavzzo2u-p51c89NCUw" target="_blank"> <img style="width: 56px; height: 56px;" src="../GALILEO/Nueva%20carpeta/png-clipart-youtube-computer-icons-youtube-logo-black.png" alt="YouTube"> </a> <a href="https://sites.google.com/d/1zcR-UR7PLL-YT4upChUT3bocrfnU95k-/p/1jlNGrBJ7alFU2p4Q-_SkZpwwgHTL_-gO/edit" target="_blank"> <img style="width: 46px; height: 50px;" src="../GALILEO/Nueva%20carpeta/Captura%20de%20pantalla%202024-08-20%20004109.png" alt="Sitio Web"> </a> </div>
-
+  <!-- Pie de página -->&nbsp;<footer>
+  </footer><br>
+<p style="text-align: center;">Visatanos en nuestras paginas y encuentra promociones exclusivas</p>
+<div style="text-align: center;">&nbsp;
+        <a href="https://www.instagram.com/elgatonegrodely/" target="_blank">
+            </a><a style="color: black;" href="https://sites.google.com/view/elgatonegrodely/p%C3%A1gina-principal?authuser=0"><img style="border: 2px solid ; width: 45px; height: 45px;" alt="" src="1instagram.jpg"></a><a href="https://www.youtube.com/channel/UCvSBAavzzo2u-p51c89NCUw" target="_blank"><img src="you.png" alt="" style="border: 2px solid ; width: 43px; height: 43px; color: black;">
+        </a>
+        <a style="color: black;" href="https://sites.google.com/d/1zcR-UR7PLL-YT4upChUT3bocrfnU95k-/p/1jlNGrBJ7alFU2p4Q-_SkZpwwgHTL_-gO/edit" target="_blank">
+            <img src="web.png" alt="Website" style="border: 2px solid ; width: 43px; height: 46px;">
+        </a>
+        </div>
 <p style="text-align: center;">ellibrerodelgatonegro.com</p>
+<div style="text-align: center;">
+        Guatemala � 2024 El Librero del Gato Negro. Todos los derechos reservados<br>
 
-<div style="text-align: center;"> </div>
 
-<p style="text-align: center;">Guatemala � 2024 El Librero del Gato
-Negro. Todos los derechos reservados.</p>
+  </div>
+<script>
+    // Arreglo para almacenar los productos en el carrito
+    let cart = [];
 
+    // Función para añadir productos al carrito
+    function addToCart(productName, price) {
+      // Verificar si el producto ya está en el carrito
+      let product = cart.find(item => item.name === productName);
+      
+      if (product) {
+        // Si el producto ya está, incrementar la cantidad
+        product.quantity += 1;
+      } else {
+        // Si el producto no está, añadirlo al carrito
+        cart.push({ name: productName, price: price, quantity: 1 });
+      }
+      updateCart();
+    }
+
+    // Función para actualizar el carrito en la interfaz
+    function updateCart() {
+      let cartTable = document.getElementById('cart-items');
+      let cartTotal = document.getElementById('cart-total');
+      cartTable.innerHTML = ''; // Limpiar la tabla de productos
+      let total = 0;
+
+      cart.forEach(item => {
+        let row = document.createElement('tr');
+        let nameCell = document.createElement('td');
+        let priceCell = document.createElement('td');
+        let removeCell = document.createElement('td');
+        let removeBtn = document.createElement('button');
+
+        nameCell.textContent = `${item.name} (x${item.quantity})`;
+        priceCell.textContent = `Q${(item.price * item.quantity).toFixed(2)}`;
+        removeBtn.textContent = 'Eliminar';
+        removeBtn.onclick = () => removeFromCart(item.name);
+        removeCell.appendChild(removeBtn);
+
+        row.appendChild(nameCell);
+        row.appendChild(priceCell);
+        row.appendChild(removeCell);
+        cartTable.appendChild(row);
+
+        total += item.price * item.quantity;
+      });
+
+      cartTotal.textContent = `Total: Q${total.toFixed(2)}`;
+    }
+
+    // Función para eliminar productos del carrito
+    function removeFromCart(productName) {
+      cart = cart.filter(item => item.name !== productName);
+      updateCart();
+    }
+
+    // Evento para el botón de proceder al pago
+    document.getElementById('checkout-btn').onclick = () => {
+      alert('Procediendo al pago...');
+      // Aquí puedes agregar lógica para proceder al pago, como redirigir a otra página o mostrar un formulario de pago.
+    };
+  </script>
 </body></html>
